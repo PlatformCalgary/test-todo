@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  max-width: 560px;
+  margin: 60px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 100;
+  color: #e06b8b;
+  margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.input-row {
+  display: flex;
+  border-bottom: 1px solid #ededed;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #555;
+}
+
+.todo-input::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+.add-btn {
+  padding: 0 20px;
+  background: #e06b8b;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.add-btn:hover {
+  background: #c9547a;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ededed;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #e06b8b;
+  flex-shrink: 0;
+}
+
+.todo-title {
+  flex: 1;
+  font-size: 18px;
+  color: #444;
+}
+
+.todo-item.done .todo-title {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: color 0.15s;
+  opacity: 0;
+}
+
+.todo-item:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  color: #e06b8b;
+}
+
+.empty {
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #ededed;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+  color: #888;
+  font-size: 13px;
+  transition: border-color 0.15s;
+}
+
+.filter-btn:hover {
+  border-color: #ddd;
+}
+
+.filter-btn.active {
+  border-color: #e06b8b;
+  color: #e06b8b;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 13px;
+  padding: 0;
+}
+
+.clear-btn:hover {
+  color: #e06b8b;
+  text-decoration: underline;
+}
