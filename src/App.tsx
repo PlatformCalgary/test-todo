@@ -46,6 +46,7 @@ export default function App() {
   return (
     <div className="app">
       <h1>todos</h1>
+      <p className="subtitle">Platform Calgary</p>
 
       <div className="card">
         <div className="input-row">
